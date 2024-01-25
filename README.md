@@ -1,6 +1,6 @@
 ## NetWatch
 
-`NetWatch` is a Python script designed to monitors network connections and logs new connections. It displays information about the established connections, such as connection time, protocol, receive queue, send queue, local and foreign addresses, and connection state.
+`NetWatch` is a Python script designed to monitors network connections and logs new connections. It displays information about the established connections.
 
 Note: This script utilizes the netstat command to gather network connection information. Please ensure that the netstat command is available on your system.
 
