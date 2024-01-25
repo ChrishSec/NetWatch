@@ -33,12 +33,12 @@ Coming Soon
 
 ## Disclaimer
 
-This script is intended for educational and research purposes only. Use it at your own risk. The author is not responsible for any damage caused by the use or misuse of this script.
+This Script is intended for educational and research purposes only. Use it at your own risk. The author is not responsible for any damage caused by the use or misuse of this Script.
 
 ## License
 
-This script is released under the GNU General Public License v3.0. Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+This Script is released under the GNU General Public License v3.0. Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
 ## Author
 
-This script was developed by [ChrishSec](https://github.com/ChrishSec). Feel free to fork, modify, and distribute it. If you have any questions or suggestions, please reach out to the author on [Telegram](https://t.me/ChrishSec).
+This Script was developed by [ChrishSec](https://github.com/ChrishSec). Feel free to fork, modify, and distribute it. If you have any questions or suggestions, please reach out to the author on [Telegram](https://t.me/ChrishSec).
