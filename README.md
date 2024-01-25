@@ -24,8 +24,6 @@ Note: This script utilizes the netstat command to gather network connection info
 
 Replace ```<YOUR_TIMEZONE>``` with the desired timezone (e.g., "SG").
 
-The script will continuously monitor and display new network connections.
-
 ### Screenshots
 
 Coming Soon
