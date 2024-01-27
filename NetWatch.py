@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
             with open(log_file, 'a') as f:
                 for proto, recv_q, send_q, local_address, foreign_address, state in connections:
-                    if local_address not in previous_connections and foreign_address not in previous_connections:
+                    if local_address not in previous_connections or foreign_address not in previous_connections:
                         time_zone = pytz.country_timezones.get(country_name, [])[0]
                         if time_zone:
                             utc_now = datetime.utcnow()
@@ -67,10 +67,10 @@ if __name__ == "__main__":
                             else:
                                 state_colored = colorize(state, '33')
 
-                            developed_by_colored = colorize("DEVELOPED BY >> ChrishSec.com", random_color_code())
-                            plus_sign_colored = colorize("[+]", '31')
+                            developed_by_chrishsec = colorize("DEVELOPED BY >> ChrishSec.com", random_color_code())
+                            developed_by_chrishsec2 = colorize("[+]", '31')
 
-                            log_data = f"\n {developed_by_colored} \n\n {plus_sign_colored} New Connection Established ↓\n\n \033[32mConnection Time: {formatted_time}\033[0m\n \033[32mProto: {proto_colored}\033[0m\n \033[32mRecv-Q: {recv_q_colored}\033[0m\n \033[32mSend-Q: {send_q_colored}\033[0m\n \033[32mLocal Address: {local_address_colored}\033[0m\n \033[32mForeign Address: {foreign_address_colored}\033[0m\n \033[32mState: {state_colored}\033[0m"
+                            log_data = f"\n {developed_by_chrishsec} \n\n {developed_by_chrishsec2} New Connection Established ↓\n\n \033[32mConnection Time: {formatted_time}\033[0m\n \033[32mProto: {proto_colored}\033[0m\n \033[32mRecv-Q: {recv_q_colored}\033[0m\n \033[32mSend-Q: {send_q_colored}\033[0m\n \033[32mLocal Address: {local_address_colored}\033[0m\n \033[32mForeign Address: {foreign_address_colored}\033[0m\n \033[32mState: {state_colored}\033[0m"
 
                             print(log_data)
                             print("\n------------")
@@ -89,4 +89,3 @@ if __name__ == "__main__":
         log_error(f" [!] Failed to run NetWatch.py Error: {e}")
     except Exception as e:
         log_error(f" [!] An error occurred: {e}")
-
