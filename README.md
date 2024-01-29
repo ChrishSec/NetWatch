@@ -18,7 +18,7 @@ Note: This script utilizes the netstat command to gather network connection info
 
 ```pip3 install -r requirements.txt```
 
-3. Run the script:
+3. Run the NetWatch.py:
 
 ```python3 NetWatch.py -timezone <YOUR_TIMEZONE>```
 
