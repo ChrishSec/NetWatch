@@ -36,8 +36,8 @@ def log_error(error_msg):
     print(f"\n ERROR: {error_msg_colored}\n")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Monitor network connections and log new connections.')
-    parser.add_argument('-timezone', help='Specify the timezone (e.g., "SG")', required=True)
+    parser = argparse.ArgumentParser(description='NetWatch.py Monitor network connections and log new connections.')
+    parser.add_argument('-timezone', default='SG', help='Country code for connection time (default: SG)')
     args = parser.parse_args()
 
     country_name = args.timezone
